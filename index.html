@@ -6,9 +6,58 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js">
     </script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&family=Roboto+Condensed:wght@700&family=Ultra&family=Josefin+Sans&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Ahoj bejku</h1>
+    <h1>Fotoalbum Lucky a Adama a Artuše</h1>
+    <div class="fotkotoc"> <!--krabice na fotky-->
+        <div class="bigfoto fadein"> <!--Jednotlivy obrazky-->
+            <div class="cislofotky">1 / 6</div>
+            <img src="/obr/madonna.jpg" style="width:100%">
+            <div class="Popisek">Takhle vyfotili Lucku u poloprofesionálky. Všichni říkají, že vypadá jak Madonna.</div>
+          </div>
+          <div class="bigfoto fadein"> <!--Jednotlivy obrazky-->
+            <div class="cislofotky">2 / 6</div>
+            <img src="/obr/proud.JPG" style="width:100%">
+            <div class="Popisek">Po narození artuše jsem byl hodně hrdej táta</div>
+          </div>
+          <div class="bigfoto fadein"> <!--Jednotlivy obrazky-->
+            <div class="cislofotky">3 / 6</div>
+            <img src="/obr/postelova.JPG" style="width:100%">
+            <div class="Popisek">Takhle si umíme hovět v posteli.</div>
+          </div>
+          <div class="bigfoto fadein"> <!--Jednotlivy obrazky-->
+            <div class="cislofotky">4 / 6</div>
+            <img src="/obr/plena.jpeg" style="width:100%">
+            <div class="Popisek">Toto je plena. Hodně hustá plena.</div>
+          </div>
+          <div class="bigfoto fadein"> <!--Jednotlivy obrazky-->
+            <div class="cislofotky">5 / 6</div>
+            <img src="/obr/shoulder.jpg" style="width:100%">
+            <div class="Popisek">Takhle vyfotili mě u poloprofesionálky. Artuš mi kuká přes rameno a já si říkám, že už je nejvyšší čas, aby Lucka měla stejné příjmění, jako já s Artušákem, pártušákem. Uvidíme, ale tenhle text píšu takhle dlouhý taky proto, abych zjistil, zda se mi to celý nerozbije, když tam budu mít hodně textu.</div>
+          </div>
+          <div class="bigfoto fadein"> <!--Jednotlivy obrazky-->
+            <div class="cislofotky">6 / 6</div>
+            <img src="/obr/smisek.JPG" style="width:100%">
+            <div class="Popisek">Zde je zachycen jeden z prvních úsměvů toho našeho prcka.</div>
+            <!-- Bacha tlačítka -->
+          </div>
+  <a class="predchozi" onclick="plusSlides(-1)"><img src="/obr/arrowleft.png" style="width: 30%;"></a>
+
+  <a class="dalsi" onclick="plusSlides(1)"><img src="/obr/arrow.png" style="width: 30%;"></a>          </div>
+        
+          <!-- puntíky pod slideshow - dobudoucna nahradit ukázkami. -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+    </div>
+
     
 
 

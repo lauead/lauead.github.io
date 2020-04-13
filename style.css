@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+    font-family: Abril fatface;
+}
+* {
+    box-sizing: border-box;
+}
+
+/*tohle mi určuje, jak vypadá krabice se slideshow*/
+
+.fotkotoc{
+max-width: 800px;
+position: relative;
+margin: auto;
+
+}
+/*tohle mi defaultně schová každou fotku, abych ji zobrazil, až přijde její čas*/
+.bigfoto {
+    display: none;
+}
+
+/* Tlacitka posunující věci kupředu a zpět */
+.predchozi, .dalsi {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    margin-top: -22px;
+    padding: 16px;
+    background-color: rgba(0,0,0,0.0);
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* To, že tlačítko další je napravo */
+  .dalsi {
+      display: flex;
+      justify-content: flex-end;
+    right: 0;
+    margin-right: auto;
+  }
+  
+  /* Při přejetí změň barvu tlačítek */
+  .predchozi:hover, .dalsi:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* popisek */
+  .Popisek {
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .Popisek:hover {
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  /* pořadí fotky */
+  .cislofotky {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* puntíky dole */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Rozetmívání */
+  .fadein {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 2s;
+    animation-name: fadein;
+    animation-duration: 2s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fadein {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
